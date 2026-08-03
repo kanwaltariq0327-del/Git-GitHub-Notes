@@ -1,4 +1,4 @@
-`#0969DA # Git-GitHub-Notes`
+# Git-GitHub-Notes
 ## Basic Commands and Their Abbreviation:
 - cd "change directory"
 - mkdir "make directory"
@@ -10,7 +10,12 @@
 - la -> to show all files and folders including the hidden ones
 - git clone **link** -> to put my remote repository (on GitHub) into my local machine (on device)
 - git status -> to check the modification(changes)
-- git add -> to add changes
+- git add -> to add changes (more ways in detail below)
+- git reset
+- git commit -m "commit message"
+- git reset HEAD~
+- git rm file-name (to remove/delete manually and add the change together)
+- git reset --hard (to recover the deleted files)
 
 ## How to Initialise Git repository:
 - Locally : use command "git init" on either Git Bash or Terminal.
@@ -38,8 +43,17 @@
 **First and foremost add the changes to the stage them run**
 - git commit -m "commit message"
 
+**In order to roll back to the previous state**
+- git reset HEAD~
+
 ## TO Login:
 **If an error occur while committing like (Please tell me who you are)**
 use the configuration command :
 - git config --global user.email "email"
 - git config --global user.name "name"
+**configuration specific to a single file**
+- git config --local user.email "email"
+- git config --local user.name "name"
+
+
+
