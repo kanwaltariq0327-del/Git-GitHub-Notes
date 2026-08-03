@@ -1,1 +1,1 @@
-&color(red) { # Git-GitHub-Notes }
+# Git-GitHub-Notes
