@@ -1,4 +1,4 @@
-`#0969DA`# Git-GitHub-Notes
+`#0969DA# Git-GitHub-Notes`
 ## Basic Commands and Their Abbreviation:
 - cd "change directory"
 - mkdir "make directory"
