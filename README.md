@@ -23,6 +23,10 @@
 - git branch new-name ( to create new branch )
 - git checkout branch-name ( to enter the mentioned branch )
 - git merge name-of-branch-to-merge -m ( to merge the branch mentioned into the branch that we're in )
+- git push ( sends local branches into the remote repository )
+- git fetch ( sends remote branches into the local repository but does not appear in the working directory )
+- git merge ( helps the fetched branch to appear in the working directory )
+- git pull ( the combination of two commands i.e **fetch and merge** )
 
 ## How to Initialise Git repository:
 - Locally : use command -> **git init** on either Git Bash or Terminal.
@@ -109,6 +113,18 @@ use the configuration command :
 - We will remove the lines that we do not want and keep it simple as it was
 - Then add the change ( with **git add .**) to the stage and run commit ( with **git commit -m " commit message "** )
 - After doing so merge the branches again **it will resolve the conflict**
+
+## Git PUSH, FETCH, MERGE AND PULL Requests:
+
+- Push:
+   - **git push** command is used to push the existing local branch into the remote repository
+- Fetch:
+   - **git fetch** command is used to fetch the existing remote branch in GitHub repository into the local branch ( but it does not appear in the working directory )
+- Merge:
+   - in order to make the branch appear in the local directory command **git merge** should be used
+- Pull:
+   - **git pull** command is the combination of both " fetch and merge " commands, instead of running two separate commands for the same purpose run git pull command 
+
 
 
 
