@@ -98,10 +98,10 @@ use the configuration command :
 ## MERGE CONFLICT:
 ### What is a merge conflict?
 - " When an exact same line of a file is changed in two different branches simultaneously then, version control system like Git cannot automatically combine changes from different branches thus occurs a **merging conflict**. "
-    - i.e: Both lines have been modified, staged and committed in their respected branches.
-    - e.g: let topic = " React " from ( main ) and let topic = " JavaScript " from ( staging )
-    - Now we merge them using command.
-    - Git will show an **error** stating something like: " Automatic merge fails, fix conflicts and then commit the result " 
+   - i.e: Both lines have been modified, staged and committed in their respected branches.
+   - e.g: let topic = " React " from ( main ) and let topic = " JavaScript " from ( staging )
+   - Now we merge them using command.
+   - Git will show an **error** stating something like: " Automatic merge fails, fix conflicts and then commit the result " 
 
 ### How to solve a MERGE CONFLICT?
 - **" In order to solve a merge conflict we to need to adjust the changes manually to tell the system which version we want to keep and which to be discarded "**
