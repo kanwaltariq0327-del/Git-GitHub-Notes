@@ -35,13 +35,13 @@
 - Before **commit** cd to root directory, type ( **git add --all / git add -A** ) for all the changes
 - ( **git add .**) stage changes within the current director
 - Ways to add changes:
-  1.git add --all
-  2.git add -A
-  3.git add .
-  4.git add * ( track all changes except the deleted ones )
-  5.git add file-name
-  6.git add file-path ( i.e folder/file name )
-  7.git add *.file extension ( to add all by file extension i.e " .txt " excluding deleted files or the files in the sub-folder )
+   - git add --all
+   - git add -A
+   - git add .
+   - git add * ( track all changes except the deleted ones )
+   - git add file-name
+   - git add file-path ( i.e folder/file name )
+   - git add *.file extension ( to add all by file extension i.e " .txt " excluding deleted files or the files in the sub-folder )
 
 ## How to reset changes:
 - before **commit** run -> ( **git reset** ) in the root directory
@@ -83,8 +83,8 @@ use the configuration command :
 - when the new branch is created it inherits the current state of the branch that we were in e.g -> ( main ) --> git branch staging  **main == staging**
 - any changes made in the separate branch will not affect the main branch unless committed and **merged**
 - To merge one branch into another ( i.e merging the branch that we are in with the branch that we will mention in the command ) run command -> **git merge name-of-branch-to-merge -m ( -m to leave message )**
-  1. e.g: ( main ) -> git merge staging -m "I've merged the staging branch with the main branch"
-  2. Now all of the data of staging will be transferred to the main branch however, the staging branch will remain unchanged
+    - e.g: ( main ) -> git merge staging -m "I've merged the staging branch with the main branch"
+    - Now all of the data of staging will be transferred to the main branch however, the staging branch will remain unchanged
 - to enter a branch -> **git checkout name**
 - In order to see all the branches or list of branches run -> **git branch**
 
