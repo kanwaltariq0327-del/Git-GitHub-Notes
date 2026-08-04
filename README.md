@@ -14,7 +14,7 @@
 - git reset ->to reset staged changes
 - git reset --hard ( to recover the deleted files )
 - git commit -m " commit message "
-- git reset HEAD~
+- git reset HEAD~ ( to undo the last commit and move everything back to the working directory )
 - git rm file-name ( to remove/delete and add the change together )
 - git rm -f file-name / git rm --force file-name ( to delete forcefully )
 - git rm --cached file-name ( to delete from the staging area )
@@ -76,17 +76,43 @@ use the configuration command :
 - run command **( git rm --cached )** to remove from the staging area and not the working directory
 - In order to delete a folder including it content ( i.e any file or sub-folder ) run -> **git rm -r folder-name** it will also stage the changes
 
-## BRANCHING:
-**Branch is like a separate line of development where we can work independently** 
+## BRANCHES:
+### What is a Branch?
+=> **" Branch is like a separate line of development where we can work independently "** 
+
+### Default Branch:
 - **Main** is the default branch
+
+### Creating separate branch and Merging:
 - To ensure we do not ruin the work while testing or creating new features we create new branch **git branch new-name**
-- when the new branch is created it inherits the current state of the branch that we were in e.g -> ( main ) --> git branch staging  **main == staging**
-- any changes made in the separate branch will not affect the main branch unless committed and **merged**
+- When the new branch is created it inherits the current state of the branch that we were in
+    - e.g -> ( main ) --> git branch staging  **main == staging**
+- Any changes made in the separate branch will not affect the main branch unless committed and **merged**
 - To merge one branch into another ( i.e merging the branch that we are in with the branch that we will mention in the command ) run command -> **git merge name-of-branch-to-merge -m ( -m to leave message )**
-    - e.g: ( main ) -> git merge staging -m "I've merged the staging branch with the main branch"
-    - Now all of the data of staging will be transferred to the main branch however, the staging branch will remain unchanged
+    - e.g: ( main ) -> git merge staging -m "I've merged the staging branch into main branch"
+    - Now all of the data of staging branch will be transferred to the main branch. However, the staging branch will remain unchanged
+### Further Commands to use:
 - to enter a branch -> **git checkout name**
 - In order to see all the branches or list of branches run -> **git branch**
+
+## MERGE CONFLICT:
+### What is a merge conflict?
+- " When an exact same line of a file is changed in two different branches simultaneously then, version control system like Git cannot automatically combine changes from different branches thus occurs a **merging conflict**. "
+         - i.e: Both lines have been modified, staged and committed in their respected branches.
+         - e.g: let topic = " React " from ( main ) and let topic = " JavaScript " from ( staging )
+         - Now we merge them using command.
+         - Git will show an **error** stating something like: " Automatic merge fails, fix conflicts and then commit the result " 
+
+### How to solve a MERGE CONFLICT?
+- **" In order to solve a merge conflict we to need to adjust the changes manually to tell the system which version we want to keep and which to be discarded "**
+- Git will itself point out the same lines that are causing the conflict
+- We will remove the lines that we do not want and keep it simple as it was
+- Then add the change ( with **git add .**) to the stage and run commit ( with **git commit -m " commit message " )
+- After doing so merge the branches again **it will resolve the conflict**
+
+
+
+
 
 
 
