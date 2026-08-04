@@ -27,6 +27,7 @@
 - git fetch ( sends remote branches into the local repository but does not appear in the working directory )
 - git merge ( helps the fetched branch to appear in the working directory )
 - git pull ( the combination of two commands i.e **fetch and merge** )
+- git rebase name-of-the-branch-we-want-changes-from ( used just as merge but but does not create an additional commit )
 
 ## How to Initialise Git repository:
 - Locally : use command -> **git init** on either Git Bash or Terminal.
@@ -123,7 +124,10 @@ use the configuration command :
 - Merge:
    - in order to make the branch appear in the local directory command **git merge** should be used
 - Pull:
-   - **git pull** command is the combination of both " fetch and merge " commands, instead of running two separate commands for the same purpose run git pull command 
+   - **git pull** command is the combination of both " fetch and merge " commands, instead of running two separate commands for the same purpose run git pull command
+ 
+## GIT REBASE:
+
 
 
 
