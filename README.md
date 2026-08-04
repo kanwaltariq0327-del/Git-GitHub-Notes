@@ -107,7 +107,7 @@ use the configuration command :
 - **" In order to solve a merge conflict we to need to adjust the changes manually to tell the system which version we want to keep and which to be discarded "**
 - Git will itself point out the same lines that are causing the conflict
 - We will remove the lines that we do not want and keep it simple as it was
-- Then add the change ( with **git add .**) to the stage and run commit ( with **git commit -m " commit message " )
+- Then add the change ( with **git add .**) to the stage and run commit ( with **git commit -m " commit message "** )
 - After doing so merge the branches again **it will resolve the conflict**
 
 
